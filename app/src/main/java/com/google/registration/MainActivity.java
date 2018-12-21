@@ -38,30 +38,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.register_btn:
                 if (full_name.getText().toString().length() == 0) {
-                      Toast.makeText(this, R.string.full_name_empty, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.full_name_empty, Toast.LENGTH_SHORT).show();
                     break;
                 } else if (full_name.getText().toString().length() >= 32) {
-                       Toast.makeText(this, R.string.full_name_big, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.full_name_big, Toast.LENGTH_SHORT).show();
                     break;
                 } else if (company.getText().toString().length() == 0) {
                     Toast.makeText(this, R.string.compant_empty, Toast.LENGTH_SHORT).show();
                     break;
-                   } else if (email.getText().toString().length() == 0) {
+                } else if (email.getText().toString().length() == 0) {
                     Toast.makeText(this, R.string.email_empty, Toast.LENGTH_SHORT).show();
-                    } else if (phone.getText().toString().length() == 0) {
+                } else if (phone.getText().toString().length() == 0) {
                     Toast.makeText(this, R.string.phone_empty, Toast.LENGTH_SHORT).show();
                     break;
-                  } else if (company.getText().toString().length() > 11 && company.getText().toString().length() < 11) {
-                     Toast.makeText(this, R.string.phone_not_valid, Toast.LENGTH_SHORT).show();
-                     break;
-                } else if (pasword.getText().toString().length() == 0) {
-                     Toast.makeText(this, R.string.password_empty, Toast.LENGTH_SHORT).show();
+                } else if (company.getText().toString().length() > 11 && company.getText().toString().length() < 11) {
+                    Toast.makeText(this, R.string.phone_not_valid, Toast.LENGTH_SHORT).show();
                     break;
-                  } else if (pasword.getText().toString().length() < 8) {
-                      Toast.makeText(this, R.string.password_not_valid, Toast.LENGTH_SHORT).show();
+                } else if (pasword.getText().toString().length() == 0) {
+                    Toast.makeText(this, R.string.password_empty, Toast.LENGTH_SHORT).show();
+                    break;
+                } else if (pasword.getText().toString().length() < 8) {
+                    Toast.makeText(this, R.string.password_not_valid, Toast.LENGTH_SHORT).show();
                     break;
                 }
-                Intent intent = new Intent(this,SecondActivity.class);
+                Intent intent = new Intent(this, SecondActivity.class);
                 startActivity(intent);
                 finish();
         }

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <string name="title">Register with Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="company">Company</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="full_name_empty">Full name can\'t be empty</string>
+    <string name="full_name_big">Full name can\'t be greater than 32 character</string>
+    <string name="compant_empty">Company can\'t be empty</string>
+    <string name="email_empty">Email can\'t be empty</string>
+    <string name="phone_empty">Phone can\'t be empty.</string>
+    <string name="phone_not_valid">Please enter a valid phone number.</string>
+    <string name="password_empty">Password can\'t be empty.</string>
+    <string name="password_not_valid">Password can\'t be less than 8 characters.</string>
+    <string name="title_activity_second">SecondActivity</string>
+
+    <string name="second_activity">Welcome to Main Activity</string>
+
+
+</resources>
